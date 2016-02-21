@@ -2,7 +2,6 @@
 
 ## Instruction 
 This is a small tool help to find the prime numbers with a super cool interface! 
-Using Sieve of Eratosthenes Algorithm.
 For the best experience, please try it out on a real iPhone!
 
 If you happend to try out this app and found bugs or had any advise, **PLEASE** open an issue or sent me an email: huiyuanr@usc.edu. it will be **GREATLY** appreciated. Thank you! I really value what I'm doing!
@@ -22,6 +21,9 @@ If you happend to try out this app and found bugs or had any advise, **PLEASE** 
 * Two different skins
 
 * Find all the prime number from 0 ~ 9999
+
+* Using Sieve of Eratosthenes Algorithm 
+
 
 ## Usage
 
