@@ -14,6 +14,23 @@
 		86D643951C794B8900E5254D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86D643931C794B8900E5254D /* LaunchScreen.storyboard */; };
 		86D643A01C794B8900E5254D /* IpodInterfaceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D6439F1C794B8900E5254D /* IpodInterfaceTests.swift */; };
 		86D643AB1C794B8900E5254D /* IpodInterfaceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D643AA1C794B8900E5254D /* IpodInterfaceUITests.swift */; };
+		86D643B91C79516000E5254D /* 2000px-6G_iPod.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D643B81C79516000E5254D /* 2000px-6G_iPod.png */; };
+		86D643BC1C79542700E5254D /* XMCircleGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D643BB1C79542700E5254D /* XMCircleGestureRecognizer.swift */; };
+		86D643CA1C797DFC00E5254D /* Num0.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D643C01C797DFC00E5254D /* Num0.png */; };
+		86D643CB1C797DFC00E5254D /* Num1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D643C11C797DFC00E5254D /* Num1.png */; };
+		86D643CC1C797DFC00E5254D /* Num2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D643C21C797DFC00E5254D /* Num2.png */; };
+		86D643CD1C797DFC00E5254D /* Num3.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D643C31C797DFC00E5254D /* Num3.png */; };
+		86D643CE1C797DFC00E5254D /* Num4.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D643C41C797DFC00E5254D /* Num4.png */; };
+		86D643CF1C797DFC00E5254D /* Num5.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D643C51C797DFC00E5254D /* Num5.png */; };
+		86D643D01C797DFC00E5254D /* Num6.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D643C61C797DFC00E5254D /* Num6.png */; };
+		86D643D11C797DFC00E5254D /* Num7.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D643C71C797DFC00E5254D /* Num7.png */; };
+		86D643D21C797DFC00E5254D /* Num8.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D643C81C797DFC00E5254D /* Num8.png */; };
+		86D643D31C797DFC00E5254D /* Num9.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D643C91C797DFC00E5254D /* Num9.png */; };
+		86D643D51C7983E400E5254D /* Brain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D643D41C7983E400E5254D /* Brain.swift */; };
+		86D643D71C7993A000E5254D /* ipodBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D643D61C7993A000E5254D /* ipodBackground.png */; };
+		86D643DB1C79A7BE00E5254D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D643DA1C79A7BE00E5254D /* MenuViewController.swift */; };
+		86D643DD1C79B11300E5254D /* DataStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D643DC1C79B11300E5254D /* DataStruct.swift */; };
+		86D643E11C79BDC800E5254D /* ipodBackground_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86D643E01C79BDC800E5254D /* ipodBackground_2.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +64,23 @@
 		86D643A61C794B8900E5254D /* IpodInterfaceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IpodInterfaceUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		86D643AA1C794B8900E5254D /* IpodInterfaceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IpodInterfaceUITests.swift; sourceTree = "<group>"; };
 		86D643AC1C794B8900E5254D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86D643B81C79516000E5254D /* 2000px-6G_iPod.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2000px-6G_iPod.png"; sourceTree = "<group>"; };
+		86D643BB1C79542700E5254D /* XMCircleGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMCircleGestureRecognizer.swift; sourceTree = "<group>"; };
+		86D643C01C797DFC00E5254D /* Num0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Num0.png; sourceTree = "<group>"; };
+		86D643C11C797DFC00E5254D /* Num1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Num1.png; sourceTree = "<group>"; };
+		86D643C21C797DFC00E5254D /* Num2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Num2.png; sourceTree = "<group>"; };
+		86D643C31C797DFC00E5254D /* Num3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Num3.png; sourceTree = "<group>"; };
+		86D643C41C797DFC00E5254D /* Num4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Num4.png; sourceTree = "<group>"; };
+		86D643C51C797DFC00E5254D /* Num5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Num5.png; sourceTree = "<group>"; };
+		86D643C61C797DFC00E5254D /* Num6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Num6.png; sourceTree = "<group>"; };
+		86D643C71C797DFC00E5254D /* Num7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Num7.png; sourceTree = "<group>"; };
+		86D643C81C797DFC00E5254D /* Num8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Num8.png; sourceTree = "<group>"; };
+		86D643C91C797DFC00E5254D /* Num9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Num9.png; sourceTree = "<group>"; };
+		86D643D41C7983E400E5254D /* Brain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Brain.swift; sourceTree = "<group>"; };
+		86D643D61C7993A000E5254D /* ipodBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipodBackground.png; sourceTree = "<group>"; };
+		86D643DA1C79A7BE00E5254D /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		86D643DC1C79B11300E5254D /* DataStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataStruct.swift; sourceTree = "<group>"; };
+		86D643E01C79BDC800E5254D /* ipodBackground_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ipodBackground_2.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,9 +133,13 @@
 			children = (
 				86D6438A1C794B8900E5254D /* AppDelegate.swift */,
 				86D6438C1C794B8900E5254D /* ViewController.swift */,
+				86D643D41C7983E400E5254D /* Brain.swift */,
+				86D643DC1C79B11300E5254D /* DataStruct.swift */,
+				86D643DA1C79A7BE00E5254D /* MenuViewController.swift */,
 				86D6438E1C794B8900E5254D /* Main.storyboard */,
-				86D643911C794B8900E5254D /* Assets.xcassets */,
 				86D643931C794B8900E5254D /* LaunchScreen.storyboard */,
+				86D643911C794B8900E5254D /* Assets.xcassets */,
+				86D643BF1C797D4F00E5254D /* Supplement Files */,
 				86D643961C794B8900E5254D /* Info.plist */,
 			);
 			path = IpodInterface;
@@ -123,6 +161,35 @@
 				86D643AC1C794B8900E5254D /* Info.plist */,
 			);
 			path = IpodInterfaceUITests;
+			sourceTree = "<group>";
+		};
+		86D643BA1C79517300E5254D /* img */ = {
+			isa = PBXGroup;
+			children = (
+				86D643E01C79BDC800E5254D /* ipodBackground_2.png */,
+				86D643D61C7993A000E5254D /* ipodBackground.png */,
+				86D643C01C797DFC00E5254D /* Num0.png */,
+				86D643C11C797DFC00E5254D /* Num1.png */,
+				86D643C21C797DFC00E5254D /* Num2.png */,
+				86D643C31C797DFC00E5254D /* Num3.png */,
+				86D643C41C797DFC00E5254D /* Num4.png */,
+				86D643C51C797DFC00E5254D /* Num5.png */,
+				86D643C61C797DFC00E5254D /* Num6.png */,
+				86D643C71C797DFC00E5254D /* Num7.png */,
+				86D643C81C797DFC00E5254D /* Num8.png */,
+				86D643C91C797DFC00E5254D /* Num9.png */,
+				86D643B81C79516000E5254D /* 2000px-6G_iPod.png */,
+			);
+			name = img;
+			sourceTree = "<group>";
+		};
+		86D643BF1C797D4F00E5254D /* Supplement Files */ = {
+			isa = PBXGroup;
+			children = (
+				86D643BB1C79542700E5254D /* XMCircleGestureRecognizer.swift */,
+				86D643BA1C79517300E5254D /* img */,
+			);
+			name = "Supplement Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,6 +260,7 @@
 				TargetAttributes = {
 					86D643861C794B8900E5254D = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 7UPHS7BVEJ;
 					};
 					86D6439A1C794B8900E5254D = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -229,9 +297,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				86D643D31C797DFC00E5254D /* Num9.png in Resources */,
+				86D643CE1C797DFC00E5254D /* Num4.png in Resources */,
+				86D643D71C7993A000E5254D /* ipodBackground.png in Resources */,
+				86D643CC1C797DFC00E5254D /* Num2.png in Resources */,
+				86D643E11C79BDC800E5254D /* ipodBackground_2.png in Resources */,
+				86D643CF1C797DFC00E5254D /* Num5.png in Resources */,
+				86D643CB1C797DFC00E5254D /* Num1.png in Resources */,
 				86D643951C794B8900E5254D /* LaunchScreen.storyboard in Resources */,
 				86D643921C794B8900E5254D /* Assets.xcassets in Resources */,
+				86D643D21C797DFC00E5254D /* Num8.png in Resources */,
+				86D643D11C797DFC00E5254D /* Num7.png in Resources */,
+				86D643CA1C797DFC00E5254D /* Num0.png in Resources */,
+				86D643B91C79516000E5254D /* 2000px-6G_iPod.png in Resources */,
+				86D643CD1C797DFC00E5254D /* Num3.png in Resources */,
 				86D643901C794B8900E5254D /* Main.storyboard in Resources */,
+				86D643D01C797DFC00E5254D /* Num6.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,7 +338,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				86D6438D1C794B8900E5254D /* ViewController.swift in Sources */,
+				86D643DB1C79A7BE00E5254D /* MenuViewController.swift in Sources */,
+				86D643DD1C79B11300E5254D /* DataStruct.swift in Sources */,
+				86D643D51C7983E400E5254D /* Brain.swift in Sources */,
 				86D6438B1C794B8900E5254D /* AppDelegate.swift in Sources */,
+				86D643BC1C79542700E5254D /* XMCircleGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +482,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = IpodInterface/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ren.IpodInterface;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -408,7 +495,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = IpodInterface/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Ren.IpodInterface;
 				PRODUCT_NAME = "$(TARGET_NAME)";

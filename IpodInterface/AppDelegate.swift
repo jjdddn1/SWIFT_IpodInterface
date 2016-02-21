@@ -8,6 +8,8 @@
 
 import UIKit
 
+let brain = Brain()
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +18,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        if  NSUserDefaults.standardUserDefaults().objectForKey("Sensitivity") != nil{
+            DataStruct.sensitivity = NSUserDefaults.standardUserDefaults().objectForKey("Sensitivity") as! Int
+        }
+        if  NSUserDefaults.standardUserDefaults().objectForKey("Skin") != nil{
+            DataStruct.skin = NSUserDefaults.standardUserDefaults().objectForKey("Skin") as! Int
+        }
+        
+        
         return true
     }
 
@@ -38,6 +48,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(application: UIApplication) {
+        NSUserDefaults.standardUserDefaults().setObject(DataStruct.sensitivity, forKey: "Sensitivity")
+        NSUserDefaults.standardUserDefaults().setObject(DataStruct.skin, forKey: "Skin")
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
