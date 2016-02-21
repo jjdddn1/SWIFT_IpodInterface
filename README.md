@@ -1,7 +1,7 @@
 # Prime Finder
 
 ## Instruction 
-This is a small tool help to find the prime numbers with a super cool interface!
+This is a small tool help to find the prime numbers with a super cool interface! For the best experience, please try it out on a real iPhone!
 
 If you happend to try out this app and found bugs or had any advise, **PLEASE** open an issue or sent me an email: huiyuanr@usc.edu. it will be **GREATLY** appreciated. Thank you! I really value what I'm doing!
 
