@@ -11,7 +11,7 @@ import Foundation
 class Brain {
     
     
-    
+    // mark all the not prime numbers
     func calculatePrime(maxValue : Int) -> [Int]{
         
         var sieveArray = [Bool](count: maxValue+1, repeatedValue: true)
@@ -38,6 +38,7 @@ class Brain {
 
     }
     
+    //pick up all the prime number and return them
     func addPrime(sieveArray: [Bool]) -> [Int]{
         
         var primeNumber : [Int] = []

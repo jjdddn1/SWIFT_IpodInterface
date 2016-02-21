@@ -55,6 +55,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var toTopDistance: NSLayoutConstraint!
     
     @IBOutlet weak var circleWidth: NSLayoutConstraint!
+    
+    
+    // current display value
     var currentValue:CGFloat = 0.0{
         didSet{
             if(currentValue > 9999){
@@ -66,6 +69,7 @@ class ViewController: UIViewController {
         }
     }
 
+    // current viewing prime number
     var currentNum:CGFloat = 0.0{
         didSet{
             if(currentNum >= CGFloat(totalNum)){
@@ -82,6 +86,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // diplay the proper image for the number
     func setImage(var value : Int ){
         cleanImage()
         var count = 1
@@ -108,9 +113,11 @@ class ViewController: UIViewController {
             value = value / 10
         }
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // set skin
         if DataStruct.skin == 1 {
             self.backGroundView.image = UIImage(named: "ipodBackground.png")
         }else {
@@ -118,10 +125,9 @@ class ViewController: UIViewController {
         }
 
         countLabel.hidden = true
-        // Do any additional setup after loading the view, typically from a nib.
         
+        // special set for different screen resolution
         let a = UIScreen.mainScreen().bounds.height
-        print(a)
         if a > 730{
             print("iphone6 plus")
             goButton.layer.cornerRadius = 48
@@ -145,23 +151,12 @@ class ViewController: UIViewController {
         }
         
         
+        // add a gesturerecognizer for the ipod wheel
         let center : CGPoint = CGPointMake(circleSliderView.bounds.width / 2 , circleSliderView.bounds.height / 2 )
-        print("X:", center.x, " Y:", center.y)
         circleSliderView.addGestureRecognizer(XMCircleGestureRecognizer(midPoint: center, target: self, action: "rotateGesture:", view: circleSliderView as UIView ))
         
         cleanImage()
-
-        
-        //add feedbackLabel
-        feedbackLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        view.addSubview(feedbackLabel)
-        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|-[view]-|", options: [], metrics: nil, views: ["view":feedbackLabel]))
-        view.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|-[view]-|", options: [], metrics: nil, views: ["view":feedbackLabel]))
-        
-        feedbackLabel.textAlignment = .Center
-        feedbackLabel.numberOfLines = 0;
-        feedbackLabel.font = UIFont(name: "HelveticaNeue-Thin", size: 20)
+       
     }
 
     override func didReceiveMemoryWarning() {
@@ -169,18 +164,19 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    
+    // reset the display to 0
     func cleanImage(){
         firstDigit.image = UIImage(named: "Num0")
         secondDigit.image = nil
-        
         thirdDigit.image = nil
-        
         fourthDigit.image = nil
     }
     
+    // whne user slide the wheel
     func rotateGesture(recognizer:XMCircleGestureRecognizer)
     {
+        
+        //if user just touch the slider
         if(recognizer.state == .Began){
             cleanButtonTouched = true
             leftButtonTouched = true
@@ -188,48 +184,48 @@ class ViewController: UIViewController {
             menuButtonTouched = true
         }
         
-        
         cleanButton.highlighted = false
         leftButton.highlighted = false
         rightButton.highlighted = false
         menuButton.highlighted = false
         
-        feedbackLabel.text = ""
-        
+        // if rotating
         if let rotation = recognizer.rotation {
-            
-            
+
             if(menuMode){
                 menuViewController.currentSelecton += rotation.degrees / 360 * 5
-                
             }else if (inputMode) {
                 currentValue += rotation.degrees / 360 * CGFloat(50 + DataStruct.sensitivity)
-                feedbackLabel.text = feedbackLabel.text! + String(format:"Value: %d", Int(currentValue))
-                
             }else{
                 currentNum += rotation.degrees / 360 * CGFloat(DataStruct.sensitivity)
             }
         }
         
+        // check if the user is tapping any button
         if let currPos = recognizer.currentTouchPostion{
+            
+            // if user's tapping the clean button
             if(cleanButtonTouched && currPos.x > cleanButton.frame.minX && currPos.x < cleanButton.frame.maxX && currPos.y > cleanButton.frame.minY && currPos.y < cleanButton.frame.maxY){
                 cleanButton.highlighted = true
             }else{
                 cleanButtonTouched = false
             }
             
+            // if user's tapping the left button
             if(leftButtonTouched && currPos.x > leftButton.frame.minX && currPos.x < leftButton.frame.maxX && currPos.y > leftButton.frame.minY && currPos.y < leftButton.frame.maxY){
                 leftButton.highlighted = true
             }else{
                 leftButtonTouched = false
             }
             
+            // if user's tapping the right button
             if(rightButtonTouched && currPos.x > rightButton.frame.minX && currPos.x < rightButton.frame.maxX && currPos.y > rightButton.frame.minY && currPos.y < rightButton.frame.maxY){
                 rightButton.highlighted = true
             }else{
                 rightButtonTouched = false
             }
             
+            // if user's tapping the menu button
             if(menuButtonTouched && currPos.x > menuButton.frame.minX && currPos.x < menuButton.frame.maxX && currPos.y > menuButton.frame.minY && currPos.y < menuButton.frame.maxY){
                 menuButton.highlighted = true
             }else{
@@ -238,6 +234,7 @@ class ViewController: UIViewController {
             
         }
         
+        // if touch ended
         if(recognizer.state == .Ended){
             if(cleanButtonTouched){
                 cleanUp()
@@ -253,6 +250,7 @@ class ViewController: UIViewController {
         
     }
     
+    // go button pressed
     @IBAction func goButton(sender: UIButton) {
         if menuMode{
             menuViewController.go()
@@ -268,6 +266,7 @@ class ViewController: UIViewController {
         }
     }
     
+    // clean button pressed
     func cleanUp(){
         if menuMode {
             menuMode = false
@@ -284,6 +283,7 @@ class ViewController: UIViewController {
         print("CleanUp start")
     }
     
+    // left button pressed
     func goLeft(){
         if menuMode {
             menuViewController.currentSelecton--
@@ -293,6 +293,7 @@ class ViewController: UIViewController {
         print("left")
     }
     
+    // right button pressed
     func goRight(){
         if menuMode {
             menuViewController.currentSelecton++
@@ -302,6 +303,7 @@ class ViewController: UIViewController {
         print("right")
     }
     
+    // menu button pressed
     func goMenu(){
         if(!menuMode){
             menuMode = true

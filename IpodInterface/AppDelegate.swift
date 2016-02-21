@@ -17,7 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        
+        // reload the user's setting
         if  NSUserDefaults.standardUserDefaults().objectForKey("Sensitivity") != nil{
             DataStruct.sensitivity = NSUserDefaults.standardUserDefaults().objectForKey("Sensitivity") as! Int
         }

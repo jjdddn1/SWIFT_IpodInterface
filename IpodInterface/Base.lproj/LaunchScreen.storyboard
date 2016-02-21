@@ -14,14 +14,29 @@
                         <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ipodBackground.png" translatesAutoresizingMaskIntoConstraints="NO" id="B9c-Fx-2Rq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B9c-Fx-2Rq" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="acX-Z5-9YR"/>
+                            <constraint firstAttribute="trailing" secondItem="B9c-Fx-2Rq" secondAttribute="trailing" id="f1y-rT-Wfz"/>
+                            <constraint firstItem="B9c-Fx-2Rq" firstAttribute="bottom" secondItem="xb3-aO-Qok" secondAttribute="top" id="oWQ-kK-kNl"/>
+                            <constraint firstItem="B9c-Fx-2Rq" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="rm3-m4-pJa"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.5" y="374.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ipodBackground.png" width="2000" height="3291"/>
+    </resources>
 </document>

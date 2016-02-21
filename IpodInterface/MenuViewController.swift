@@ -116,7 +116,7 @@ class MenuViewController: UIViewController , MFMailComposeViewControllerDelegate
             sendFeedBack()
             break
         case 3:
-            if let requestUrl = NSURL(string: "https://itunes.apple.com/us/app/calculator-calculator-that/id1081975220?l=zh&ls=1&mt=8") {
+            if let requestUrl = NSURL(string: "https://itunes.apple.com/us/app/prime-finder/id1086470891?l=zh&ls=1&mt=8") {
                 UIApplication.sharedApplication().openURL(requestUrl)
             }
             break
