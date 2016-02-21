@@ -15,17 +15,14 @@ class MenuViewController: UIViewController , MFMailComposeViewControllerDelegate
     var beforeViewController : ViewController?
     
     @IBOutlet weak var sensitivityLabel: UILabel!
-    
     @IBOutlet weak var feedbackLabel: UILabel!
-    
     @IBOutlet weak var shareLabel: UILabel!
-    
     @IBOutlet weak var rateInAppStoreLabel: UILabel!
-    
     @IBOutlet weak var exitLabel: UILabel!
     
     var labelArray : [UILabel] = []
     
+    // current selecting bullet
     var currentSelecton : CGFloat = 0.0{
         didSet{
             if(currentSelecton > 4){
@@ -33,15 +30,14 @@ class MenuViewController: UIViewController , MFMailComposeViewControllerDelegate
             }else if currentSelecton < 0{
                 currentSelecton = 0
             }
-            
             setBorder(Int(currentSelecton))
         }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        sensitivityLabel.layer.borderColor = UIColor.whiteColor().CGColor
         
+        sensitivityLabel.layer.borderColor = UIColor.whiteColor().CGColor
         feedbackLabel.layer.borderColor = UIColor.whiteColor().CGColor
         shareLabel.layer.borderColor = UIColor.whiteColor().CGColor
         rateInAppStoreLabel.layer.borderColor = UIColor.whiteColor().CGColor
@@ -63,6 +59,7 @@ class MenuViewController: UIViewController , MFMailComposeViewControllerDelegate
         // Dispose of any resources that can be recreated.
     }
     
+    // reload user's setting
     override func viewDidAppear(animated: Bool) {
         currentSelecton = 0
         switch DataStruct.sensitivity{
@@ -89,8 +86,11 @@ class MenuViewController: UIViewController , MFMailComposeViewControllerDelegate
         label.layer.borderWidth = 3
     }
     
+    // go button pressed
     func go(){
         switch Int(currentSelecton){
+        
+        // change sensitivity
         case 0:
             if(DataStruct.sensitivity == 50){
                 DataStruct.sensitivity = 10
@@ -103,6 +103,8 @@ class MenuViewController: UIViewController , MFMailComposeViewControllerDelegate
                 sensitivityLabel.text = " Sensitivity : Medium "
             }
             break
+            
+        // change skin
         case 1:
             if DataStruct.skin == 1 {
                 beforeViewController!.backGroundView.image = UIImage(named: "ipodBackground_2.png")
@@ -112,14 +114,20 @@ class MenuViewController: UIViewController , MFMailComposeViewControllerDelegate
                  DataStruct.skin = 1
             }
             break
+        
+        // send feedback
         case 2:
             sendFeedBack()
             break
+        
+        // open itunes
         case 3:
             if let requestUrl = NSURL(string: "https://itunes.apple.com/us/app/prime-finder/id1086470891?l=zh&ls=1&mt=8") {
                 UIApplication.sharedApplication().openURL(requestUrl)
             }
             break
+            
+        // quit
         case 4:
             self.view.hidden = true
             beforeViewController?.menuMode = false
@@ -130,8 +138,9 @@ class MenuViewController: UIViewController , MFMailComposeViewControllerDelegate
         }
     }
     
+    // send an email to the address
     func sendFeedBack(){
-        let Subject = "Feedback for Find Prime"
+        let Subject = "Feedback for Prime Finder"
         let toRecipients = ["huiyuanr@usc.edu"]
         let mc : MFMailComposeViewController = MFMailComposeViewController()
         mc.mailComposeDelegate = self

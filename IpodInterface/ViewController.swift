@@ -10,32 +10,29 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var menuViewController : MenuViewController!
+
     @IBOutlet weak var circleSliderView: UIView!
-    
     @IBOutlet weak var digitView: UIView!
     
-    var menuViewController : MenuViewController!
-    
-    
-    var feedbackLabel = UILabel(frame: CGRectZero)
     @IBOutlet weak var backGroundView: UIImageView!
     
-    @IBOutlet weak var goButton: UIButton!
-    
     @IBOutlet weak var firstDigit: UIImageView!
-    
     @IBOutlet weak var secondDigit: UIImageView!
-    
     @IBOutlet weak var thirdDigit: UIImageView!
-    
     @IBOutlet weak var fourthDigit: UIImageView!
     
     @IBOutlet weak var countLabel: UILabel!
     
+    @IBOutlet weak var goButton: UIButton!
     @IBOutlet weak var cleanButton: UIButton!
     @IBOutlet weak var leftButton: UIButton!
     @IBOutlet weak var rightButton: UIButton!
     @IBOutlet weak var menuButton: UIButton!
+    
+    @IBOutlet weak var toBottomDistance: NSLayoutConstraint!
+    @IBOutlet weak var toTopDistance: NSLayoutConstraint!
+    @IBOutlet weak var circleWidth: NSLayoutConstraint!
 
     var cleanButtonTouched = true
     var leftButtonTouched = true
@@ -44,19 +41,12 @@ class ViewController: UIViewController {
     
     var result : [Int] = []
     
-    var inputMode = true
-    var menuMode = false
+    var inputMode = true // if user is inputing the upper bound
+    var menuMode = false // if user entered the menu
     
     // total numebr of prime
     var totalNum = 0
 
-    @IBOutlet weak var toBottomDistance: NSLayoutConstraint!
-    
-    @IBOutlet weak var toTopDistance: NSLayoutConstraint!
-    
-    @IBOutlet weak var circleWidth: NSLayoutConstraint!
-    
-    
     // current display value
     var currentValue:CGFloat = 0.0{
         didSet{
@@ -144,6 +134,7 @@ class ViewController: UIViewController {
             circleSliderView.layer.cornerRadius = 105
             toBottomDistance.constant = 50
         }else{
+            print("iphone4s")
             goButton.layer.cornerRadius = 31
             circleSliderView.layer.cornerRadius = 176 / 2
             toBottomDistance.constant = 33
