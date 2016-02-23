@@ -259,7 +259,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="Num0.png" width="273" height="662"/>
+        <image name="Num0.png" width="273" height="661"/>
         <image name="ipodBackground.png" width="2000" height="3291"/>
     </resources>
 </document>
