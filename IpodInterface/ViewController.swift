@@ -155,6 +155,14 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    override func viewDidAppear(animated: Bool) {
+        if(DataStruct.firstTimeLoad){
+            self.performSegueWithIdentifier("showAbout", sender: self)
+            DataStruct.firstTimeLoad = false
+        }
+    }
+    
+    
     // reset the display to 0
     func cleanImage(){
         firstDigit.image = UIImage(named: "Num0")

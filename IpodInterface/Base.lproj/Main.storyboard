@@ -171,11 +171,68 @@
                         <outlet property="thirdDigit" destination="03o-9m-xus" id="4bF-TA-7ZM"/>
                         <outlet property="toBottomDistance" destination="7v3-3H-8o9" id="iSR-4a-vKz"/>
                         <outlet property="toTopDistance" destination="9LA-xr-Mnd" id="f5o-aC-zi2"/>
+                        <segue destination="fP9-BT-LPA" kind="presentation" identifier="showAbout" modalPresentationStyle="overFullScreen" modalTransitionStyle="crossDissolve" id="njq-jx-J47"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="304.5" y="353.5"/>
+        </scene>
+        <!--Instruction View Controller-->
+        <scene sceneID="3hz-FR-xmu">
+            <objects>
+                <viewController storyboardIdentifier="InstructionViewController" modalTransitionStyle="crossDissolve" useStoryboardIdentifierAsRestorationIdentifier="YES" id="fP9-BT-LPA" customClass="InstructionViewController" customModule="IpodInterface" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Emw-8W-mGp"/>
+                        <viewControllerLayoutGuide type="bottom" id="nl5-JS-bGT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m3G-BH-epP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Prime_ins.png" translatesAutoresizingMaskIntoConstraints="NO" id="bFj-NR-Y8d">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XMo-GL-gjn">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <connections>
+                                    <action selector="goBack:" destination="fP9-BT-LPA" eventType="touchUpInside" id="M9T-gV-3w7"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prime Finder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A1U-Ib-01O">
+                                <rect key="frame" x="29" y="46" width="170" height="31"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="22"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V 1.0.1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G2U-Ge-GNM">
+                                <rect key="frame" x="63" y="85" width="102" height="23"/>
+                                <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bFj-NR-Y8d" firstAttribute="bottom" secondItem="nl5-JS-bGT" secondAttribute="top" id="2vv-eb-FNL"/>
+                            <constraint firstItem="XMo-GL-gjn" firstAttribute="leading" secondItem="bFj-NR-Y8d" secondAttribute="leading" id="59X-rT-agK"/>
+                            <constraint firstItem="A1U-Ib-01O" firstAttribute="top" secondItem="Emw-8W-mGp" secondAttribute="bottom" constant="26" id="B9q-Mb-xVm"/>
+                            <constraint firstAttribute="trailing" secondItem="bFj-NR-Y8d" secondAttribute="trailing" id="HVA-Gt-Zj9"/>
+                            <constraint firstItem="A1U-Ib-01O" firstAttribute="leading" secondItem="m3G-BH-epP" secondAttribute="leadingMargin" constant="13" id="ZKf-Rj-MXS"/>
+                            <constraint firstItem="XMo-GL-gjn" firstAttribute="bottom" secondItem="nl5-JS-bGT" secondAttribute="top" id="dCw-mr-VS5"/>
+                            <constraint firstItem="bFj-NR-Y8d" firstAttribute="leading" secondItem="m3G-BH-epP" secondAttribute="leading" id="mVH-Je-eee"/>
+                            <constraint firstItem="XMo-GL-gjn" firstAttribute="trailing" secondItem="bFj-NR-Y8d" secondAttribute="trailing" id="pmQ-Ec-qry"/>
+                            <constraint firstItem="bFj-NR-Y8d" firstAttribute="top" secondItem="m3G-BH-epP" secondAttribute="top" id="rss-yX-pAM"/>
+                            <constraint firstItem="G2U-Ge-GNM" firstAttribute="centerX" secondItem="A1U-Ib-01O" secondAttribute="centerX" id="tfN-uT-ydN"/>
+                            <constraint firstItem="XMo-GL-gjn" firstAttribute="top" secondItem="bFj-NR-Y8d" secondAttribute="top" id="yGw-6T-VpP"/>
+                            <constraint firstItem="G2U-Ge-GNM" firstAttribute="top" secondItem="A1U-Ib-01O" secondAttribute="bottom" constant="8" id="yyt-bF-Mhh"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4FM-TJ-1dx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="304.5" y="1120.5"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="sTO-17-vJr">
@@ -214,7 +271,7 @@
                                 <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Exit " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sqm-H1-FwN">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" About" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sqm-H1-FwN">
                                 <rect key="frame" x="36" y="524" width="303" height="123"/>
                                 <fontDescription key="fontDescription" name="AppleColorEmoji" family="Apple Color Emoji" pointSize="20"/>
                                 <color key="textColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
@@ -260,6 +317,7 @@
     </scenes>
     <resources>
         <image name="Num0.png" width="273" height="661"/>
+        <image name="Prime_ins.png" width="638" height="1138"/>
         <image name="ipodBackground.png" width="2000" height="3291"/>
     </resources>
 </document>

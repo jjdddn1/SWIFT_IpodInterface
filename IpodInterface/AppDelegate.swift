@@ -27,6 +27,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             DataStruct.skin = NSUserDefaults.standardUserDefaults().objectForKey("Skin") as! Int
         }
         
+        if  NSUserDefaults.standardUserDefaults().objectForKey("firstTimeLoad") != nil{
+            DataStruct.firstTimeLoad = NSUserDefaults.standardUserDefaults().objectForKey("firstTimeLoad") as! Bool
+        }
+    
         
         return true
     }
@@ -52,6 +56,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         NSUserDefaults.standardUserDefaults().setObject(DataStruct.sensitivity, forKey: "Sensitivity")
         NSUserDefaults.standardUserDefaults().setObject(DataStruct.skin, forKey: "Skin")
+        NSUserDefaults.standardUserDefaults().setObject(DataStruct.firstTimeLoad, forKey: "firstTimeLoad")
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 

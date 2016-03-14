@@ -12,4 +12,5 @@ struct DataStruct {
     
     static var sensitivity = 50
     static var skin = 1
+    static var firstTimeLoad = true
 }

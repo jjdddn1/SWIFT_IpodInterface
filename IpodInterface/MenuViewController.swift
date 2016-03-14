@@ -129,9 +129,7 @@ class MenuViewController: UIViewController , MFMailComposeViewControllerDelegate
             
         // quit
         case 4:
-            self.view.hidden = true
-            beforeViewController?.menuMode = false
-            beforeViewController?.digitView.hidden = false
+            beforeViewController!.performSegueWithIdentifier("showAbout", sender: self)
             break
         default:
             break

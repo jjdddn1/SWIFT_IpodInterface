@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		86919F0C1C7CDC3F001BEB8C /* Prime_ins.png in Resources */ = {isa = PBXBuildFile; fileRef = 86919F0B1C7CDC3F001BEB8C /* Prime_ins.png */; };
+		86919F0E1C7CDD0F001BEB8C /* InstructionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86919F0D1C7CDD0F001BEB8C /* InstructionViewController.swift */; };
 		86A964731C7C491B002BD350 /* Num0.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A964691C7C491B002BD350 /* Num0.png */; };
 		86A964741C7C491B002BD350 /* Num1.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9646A1C7C491B002BD350 /* Num1.png */; };
 		86A964751C7C491B002BD350 /* Num2.png in Resources */ = {isa = PBXBuildFile; fileRef = 86A9646B1C7C491B002BD350 /* Num2.png */; };
@@ -51,6 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		86919F0B1C7CDC3F001BEB8C /* Prime_ins.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Prime_ins.png; sourceTree = "<group>"; };
+		86919F0D1C7CDD0F001BEB8C /* InstructionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstructionViewController.swift; sourceTree = "<group>"; };
 		86A964691C7C491B002BD350 /* Num0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Num0.png; sourceTree = "<group>"; };
 		86A9646A1C7C491B002BD350 /* Num1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Num1.png; sourceTree = "<group>"; };
 		86A9646B1C7C491B002BD350 /* Num2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Num2.png; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 				86D643D41C7983E400E5254D /* Brain.swift */,
 				86D643DC1C79B11300E5254D /* DataStruct.swift */,
 				86D643DA1C79A7BE00E5254D /* MenuViewController.swift */,
+				86919F0D1C7CDD0F001BEB8C /* InstructionViewController.swift */,
 				86D6438E1C794B8900E5254D /* Main.storyboard */,
 				86D643931C794B8900E5254D /* LaunchScreen.storyboard */,
 				86D643911C794B8900E5254D /* Assets.xcassets */,
@@ -168,6 +173,7 @@
 			children = (
 				86D643E01C79BDC800E5254D /* ipodBackground_2.png */,
 				86D643D61C7993A000E5254D /* ipodBackground.png */,
+				86919F0B1C7CDC3F001BEB8C /* Prime_ins.png */,
 				86A964691C7C491B002BD350 /* Num0.png */,
 				86A9646A1C7C491B002BD350 /* Num1.png */,
 				86A9646B1C7C491B002BD350 /* Num2.png */,
@@ -298,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				86A964781C7C491B002BD350 /* Num5.png in Resources */,
+				86919F0C1C7CDC3F001BEB8C /* Prime_ins.png in Resources */,
 				86A964751C7C491B002BD350 /* Num2.png in Resources */,
 				86D643D71C7993A000E5254D /* ipodBackground.png in Resources */,
 				86A964761C7C491B002BD350 /* Num3.png in Resources */,
@@ -339,6 +346,7 @@
 			files = (
 				86D6438D1C794B8900E5254D /* ViewController.swift in Sources */,
 				86D643DB1C79A7BE00E5254D /* MenuViewController.swift in Sources */,
+				86919F0E1C7CDD0F001BEB8C /* InstructionViewController.swift in Sources */,
 				86D643DD1C79B11300E5254D /* DataStruct.swift in Sources */,
 				86D643D51C7983E400E5254D /* Brain.swift in Sources */,
 				86D6438B1C794B8900E5254D /* AppDelegate.swift in Sources */,
