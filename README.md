@@ -12,6 +12,8 @@ If you happend to try out this app and found bugs or had any advise, **PLEASE** 
 ![image](https://github.com/jjdddn1/SWIFT_IpodInterface/blob/master/Screenshot/0.png?raw=false)
 ![image](https://github.com/jjdddn1/SWIFT_IpodInterface/blob/master/Screenshot/1.png?raw=false)
 
+You can find some gif [here](http://huiyuanr.portfoliobox.net/primefinder)
+
 ## Features
 
 * Looks & uses like an iPod
